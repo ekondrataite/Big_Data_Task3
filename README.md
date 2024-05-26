@@ -6,8 +6,16 @@ The code of the task is provided in this repository and was done by Analytic Ave
 
 Tasks:
 1. **Data Retrieval**
-2. **Data Preparation**
-3. **Data Processing**
-4. **Identifying the Longest Route**
-5. **Result**
-6. **Difficulties**
+   - created a Pyspark Dataframe from the given file.
+3. **Data Preparation**
+   - ensured the correct data types for Timestamp, Latitude, Longitude.
+5. **Data Processing**
+   - filtered out vessels that have less than 100 datapoints,
+   - detected outliers based on the speed value (calculated the travelled time and timestamp differences to derive speed value)
+6. **Identifying the Longest Route**
+   - the distance was calculated using Haversine formula,
+   - identified the vessel which travelled the longest route based on aggregation.
+8. **Result**
+   - the vessel **MMSI=** travelled the loungest route of **km**. 
+10. **Difficulties**
+    - the main difficulty was data processing for correct calculations, mainly outlier detection.
