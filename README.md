@@ -19,5 +19,5 @@ Tasks:
    - the vessel **MMSI=230352000** travelled the loungest route of **7383.11 km**. 
 10. **Difficulties**
     - the main difficulty was data processing for correct calculations, mainly outlier detection. To over come this difficulty we tried out different approaches:
-       - calculate speed of each record and remove the values that were too large based on logic and based on IQR method,
+       - calculate speed for each record and remove the values that were too large based on logic and based on IQR method,
        - **solution:** filter out records were the change in coordinates was to big for certain time.
